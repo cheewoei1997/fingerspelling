@@ -20,3 +20,5 @@ venv.bak/
 
 # Raw dataset
 original_images/
+cropped_images/
+test/

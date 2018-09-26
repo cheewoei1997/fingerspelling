@@ -11,7 +11,7 @@ stud_id = "1141128570"
 folder =  os.path.join(os.getcwd(), path)
 # Gets all contents of the address of folder
 filenames = os.listdir(folder)
-i = 1
+i = 0
 
 for filename in filenames:
     # Replace everything in target directory with ordered namings
