@@ -21,4 +21,6 @@ venv.bak/
 # Raw dataset
 original_images/
 cropped_images/
+greyscale_images/
+64x64_images/
 test/
