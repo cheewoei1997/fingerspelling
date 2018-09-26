@@ -26,8 +26,8 @@ startNum = 000
 
 #Folder Name aka Alphabet/Number
 orig_img = "original_images"
-alphabet = "Y"
-letter = "y"
+alphabet = "Q"
+letter = "q"
 
 #Your ID
 stud_id = "1141128570"

@@ -1,13 +1,18 @@
 import os
 import cv2
 
-# Folder name
-path = "imagetest"
+# Folder to convert images
+path = "cropped_images"
+# Folder to save converted images
+save = "greyscale_images"
+student_id = "1141128570"
 
 # Get address of current working directory
 folder =  os.path.join(os.getcwd(), path)
 # Gets all contents of the address of folder
 filenames = os.listdir(folder)
+# Folder to be saved into
+save_folder = os.path.join(os.getcwd(), save)
 
 # Iterates through imagetest
 for filename in filenames:
@@ -16,9 +21,13 @@ for filename in filenames:
 
     # Iterates through the subdirectories in imagetest
     for image in directory:
+        letter = image[9]
+        save_foldernew = os.path.join(save_folder, letter)
+
         # Reads the images in the subdirectories
         array_img = cv2.imread(os.path.join(directories, image))
-        # Convert them to greyscale
+
+        # Converts selected image to greyscale
         grey_img = cv2.cvtColor(array_img, cv2.COLOR_BGR2GRAY)
-        # Save them after renaming them
-        cv2.imwrite(os.path.join(directories, image[:3] + 'greyscale.jpg'), grey_img)
+
+        cv2.imwrite(os.path.join(save_foldernew, image[:3] + '_grey_%s_%s.jpg' % (letter, student_id)), grey_img)
