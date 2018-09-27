@@ -3,12 +3,12 @@ import numpy as np
 import os
 
 # Folder name
-path = "greyscale_images"
+path = "greyscale"
 # Desired resolution
 width = 64
 height = 64
 # Save location
-save = "64x64_images"
+save = "greyscalesave"
 save_folder = os.path.join(os.getcwd(), save)
 
 # student_id = "1141128570"
@@ -21,18 +21,17 @@ filenames = os.listdir(folder)
 # Iterates through imagetest
 for filename in filenames:
     directories = os.path.join(folder, filename)
-    directory = os.listdir(directories)
+    # directory = os.listdir(directories)
 
     # Iterates through the subdirectories in imagetest
-    for image in directory:
-        if image == 'desktop.ini':
-            continue
-        letter = image[9]
-        save_foldernew = os.path.join(save_folder, letter)
-        print("Currently at: ", image)
+    if filename == 'desktop.ini':
+        continue
+    letter = filename[9]
+    print("Currently at: ", filename)
 
-        # Reads the images in the subdirectories
-        array_img = cv2.imread(os.path.join(directories, image))
+    # Reads the images in the subdirectories
+    array_img = cv2.imread(os.path.join(folder, filename))
+    # print(os.path.join(folder, filename))
 
-        resized_image = cv2.resize(array_img, (width, height))
-        cv2.imwrite(os.path.join(save_foldernew, image[:3] + '_sized_%s_%s.jpg' % (letter, image[12:22])), resized_image)
+    resized_image = cv2.resize(array_img, (width, height))
+    cv2.imwrite(os.path.join(save_folder, filename[:3] + '_sized_%s_%s.jpg' % (letter, filename[12:21])), resized_image)

@@ -23,6 +23,7 @@ for filename in filenames:
     for image in directory:
         if image == 'desktop.ini':
             continue
+            
         letter = image[9]
         save_foldernew = os.path.join(save_folder, letter)
         print("Currently at: ", image)
