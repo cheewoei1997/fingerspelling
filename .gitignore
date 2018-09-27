@@ -24,3 +24,12 @@ cropped_images/
 greyscale_images/
 64x64_images/
 test/
+greyjacobdaniel/
+Jacob Daniel/
+CropSia/
+CropDO/
+CropAvin/
+jacobdaniel/
+*.zip
+*.csv
+*.txt
