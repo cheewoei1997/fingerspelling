@@ -30,9 +30,6 @@ Putting an agent in an environment to have it find the best path.
 
 ## Credits
 * Dr. Lim Kian Ming
-
-## Credits
-* Dr. Lim Kian Ming
 * Do Chen Hao
 * Sia Chun Wai
 * Avinnash A/L Mugunan
