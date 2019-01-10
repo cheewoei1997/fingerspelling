@@ -2,7 +2,7 @@
 This repository contains the essentials for building an extremely simple, down-to-earth model builder that may barely be qualified to be called as a neural network.
 
 Here's how to get you started on copying all of the below tutorial codes. Run the below code to clone this repository onto your local computer.  
-`git clone https://github.com/cheewoei1997/computer-vision.git`
+`git clone https://github.com/cheewoei1997/fingerspelling.git`
 
 Once you've cloned, just navigate to the folder that you have cloned and you're all set.
 
