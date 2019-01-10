@@ -75,7 +75,7 @@ image_data = np.array(image_data)
 
 # img_data_scaled = image_data.reshape(image_data.shape[0], img_rows, img_cols, num_col)
 # print(img_data_scaled)
-num_samples = 16500
+num_samples = len(filenames)
 label=np.ones((num_samples,),dtype = str)
 label[0:500]=1
 label[501:1000]=2
